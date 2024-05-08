@@ -1,5 +1,11 @@
 import React from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
 import HomePage from './HomePage';
+import PracticePlans from './PracticePlans';
 import './App.css';
 
 function App() {
@@ -16,7 +22,12 @@ function App() {
           </ul>
         </nav>
         <div className="App-content">
-          <HomePage/>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<HomePage/>} />
+              <Route path="/practice-plans" element={<PracticePlans/>} />
+            </Routes>
+          </BrowserRouter>
         </div>
       </div>
     </div>
