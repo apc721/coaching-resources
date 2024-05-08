@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react'; // Import act from @testing-library/react
+import { render, screen } from '@testing-library/react';
 import HomePage from './HomePage';
 
 test('should update the state', async () => {
