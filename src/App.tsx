@@ -1,4 +1,5 @@
 import React from 'react';
+import HomePage from './HomePage';
 import './App.css';
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
           </ul>
         </nav>
         <div className="App-content">
-          <h2>Main Content</h2>
-          <p>This is where your main content will be displayed.</p>
+          <HomePage/>
         </div>
       </div>
     </div>
